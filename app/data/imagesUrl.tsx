@@ -1,0 +1,15 @@
+const imagesURL = [
+  "/feb-mar.jpg",
+  "/mar-abr.jpg",
+  "/abr-may.jpg",
+  "/may-jun.jpg",
+  "/jun-jul.jpg",
+  "/jul-ago.jpg",
+  "/ago-sep.jpg",
+  "/sep-oct.jpg",
+  "/oct-nov.jpg",
+  "/nov-dic.jpg",
+];
+
+
+export default imagesURL;
