@@ -115,6 +115,26 @@ export default function Carrousel({ data }: CarouselProps) {
             />
           </svg>
         </button>
+        {/** Para mobile */}
+        <button
+          onClick={() => go("prev")}
+          className="md:hidden absolute right-10 top-10 bg-card-background rounded-full p-4 outline-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m4.5 15.75 7.5-7.5 7.5 7.5"
+            />
+          </svg>
+        </button>
         <button
           onClick={() => go("next")}
           className="md:hidden absolute right-10 bottom-10 bg-card-background rounded-full p-4 outline-2"
