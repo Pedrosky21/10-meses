@@ -1,5 +1,3 @@
-import MonthCard from "./components/MonthCard";
-
 import monthsNames from "./data/monthsNames";
 import imagesURL from "./data/imagesUrl";
 import descriptions from "./data/descriptions";

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { animate } from "animejs";
 import Image from "next/image";
 
@@ -19,6 +19,17 @@ export default function MonthCard({
 }: MonthCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [flipped, setFlipped] = useState(false);
+  const heartSVG = useRef<SVGSVGElement>(null);
+
+  useEffect(() => {
+    if (!heartSVG.current) return;
+
+    animate(heartSVG.current, {
+      scale: 2,
+      opacity: [0.5, 0],
+      loop: true,
+    });
+  }, []);
 
   const handleFlip = () => {
     if (!cardRef.current) return;
@@ -49,20 +60,37 @@ export default function MonthCard({
             className="h-full w-full flex flex-col space-y-4 pt-20 items-center"
             style={{ backfaceVisibility: "hidden" }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="60"
-              height="60"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-heart-icon lucide-heart fill-bordo-text text-bordo-text"
-            >
-              <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-            </svg>
+            <div className="flex relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-heart-icon lucide-heart fill-bordo-text text-bordo-text absolute inset-0"
+              >
+                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+              </svg>
+              <svg
+                ref={heartSVG}
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-heart-icon lucide-heart fill-bordo-text text-bordo-text"
+              >
+                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+              </svg>
+            </div>
             <div className="flex items-baseline space-x-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

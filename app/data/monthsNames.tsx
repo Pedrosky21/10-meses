@@ -8,7 +8,8 @@ const monthsNames = [
     "Ago-Sep",
     "Sep-Oct",
     "Oct-Nov",
-    "Nov-Dic"
+    "Nov-Dic",
+    "Dic-Ene"
 ];
 
 export default monthsNames

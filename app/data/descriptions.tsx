@@ -8,7 +8,8 @@ const descriptions = [
   "Llevamos a Pina y Luni a la plazaa! Fue un día re lindo, las hicimos divertir un montón, se conocieron y se llevaron de diez por suerte. Desayunamos en Panicafé 🤤🤤. Hicimos galletitas.",
   "Fuimos al cinee!!! Mala peli pero la vi con vos así q feliz, no me quejo. Te regalé al chanchito para que duermas con él y te acuerdes de mí.",
   "FUE TU CUMPLEEE!!!! Pasé el día con vos y tu familia y comimos chocotorta riquísima. Hicimos bastantes videollamadas 🫦🫦.  Me avisaste que estaba gratis el FNAF.",
-  "Te compraron compuuu!! Fue el inicio de la viceada en PC. Te volviste ree pro en valo y nos juntamos a vicear en tu casa jajsjas. Fuimos al dique con tu familia ☺️"
+  "Te compraron compuuu!! Fue el inicio de la viceada en PC. Te volviste ree pro en valo y nos juntamos a vicear en tu casa jajsjas. Fuimos al dique con tu familia ☺️",
+  "¡¡Fue mi cumpleañosss!! Me hiciste la torta mas rica que probé, me regalaste un mousotee, nos metimos a la pileta, fuimos al río. ¡Pasamos año nuevo juntos! 💓",
 ];
 
 export default descriptions;

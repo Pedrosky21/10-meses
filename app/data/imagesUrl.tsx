@@ -9,6 +9,7 @@ const imagesURL = [
   "/sep-oct.jpg",
   "/oct-nov.jpg",
   "/nov-dic.jpg",
+  "/dic-ene.jpg",
 ];
 
 
